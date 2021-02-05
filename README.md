@@ -1,6 +1,8 @@
 # Frontend Mentor - Bookmark landing page
 
-![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)
+## Design preview
+
+![desktop-preview](https://user-images.githubusercontent.com/70760983/107041183-24fdd800-67fb-11eb-9abb-02c326f82e70.jpg)
 
 ## Welcome! 👋
 
