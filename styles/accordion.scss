@@ -1,0 +1,146 @@
+$font-fam-Arimo: "Arimo", sans-serif;
+$font-fam-Rubik: "Rubik", sans-serif;
+
+//color
+$unique-color: hsl(0, 94%, 66%);
+$primary-color: hsl(229, 31%, 21%);
+$secondary-color: hsl(229, 8%, 60%);
+$main-color: hsl(231, 69%, 60%);
+//transition
+
+$main-transition: all 400ms ease-in-out;
+.main .accordion-container {
+  .accordion-text-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    grid-template-rows: 1fr;
+    margin-top: 100px;
+    h2 {
+      text-transform: capitalize;
+    }
+  }
+  .accordion-menu-section {
+    .accordion-menu {
+      width: 100%;
+      max-width: 550px;
+      margin: 60px auto 0px;
+      background: #fff;
+      border-radius: 4px;
+    }
+    .accordion-menu li.open .dropdownlink {
+      .fa-chevron-down {
+        transform: rotate(180deg);
+      }
+    }
+    .accordion-menu li:first-child .dropdownlink {
+      border-top: 1px solid #ccc;
+    }
+    .dropdownlink {
+      cursor: pointer;
+      display: block;
+      padding: 15px 15px 15px 0px;
+      font-size: 18px;
+      border-bottom: 1px solid #ccc;
+      color: $primary-color;
+      font-family: $font-fam-Rubik;
+      position: relative;
+      font-weight: 600;
+      transition: $main-transition;
+
+      &:hover {
+        color: $unique-color;
+      }
+
+      i {
+        position: absolute;
+        top: 17px;
+        left: 16px;
+      }
+      .fa-chevron-down {
+        right: 12px;
+        left: auto;
+        color: $primary-color;
+        &:hover {
+          color: $unique-color;
+        }
+      }
+    }
+
+    .submenuItems {
+      display: none;
+      p {
+        line-height: 35px;
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 989px) {
+}
+@media (max-width: 678px) {
+}
+@media (max-width: 589px) {
+}
+@media (max-width: 425px) {
+  .main .accordion-container {
+    .accordion-text-section {
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 19px;
+      }
+    }
+    .accordion-menu-section {
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      place-items: center;
+      .accordion-menu {
+        .dropdownlink {
+          font-size: 20px;
+        }
+        .submenuItems {
+          p {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .main .accordion-container {
+    .accordion-text-section {
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 19px;
+      }
+    }
+    .accordion-menu-section {
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      place-items: center;
+      .accordion-menu {
+        .dropdownlink {
+          font-size: 20px;
+        }
+        .submenuItems {
+          p {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}

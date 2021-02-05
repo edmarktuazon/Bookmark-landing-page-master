@@ -1,0 +1,323 @@
+.main .first-footer-container {
+  width: 100%;
+  height: 50vh;
+  background: #5368df;
+  margin-top: 100px;
+}
+
+.main .first-footer-container .first-footer-text {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.main .first-footer-container .first-footer-text p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 70px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.main .first-footer-container .first-footer-text h2 {
+  color: #fff;
+}
+
+.main .first-footer-container .first-footer-text .contact-section form {
+  display: block;
+}
+
+.main .first-footer-container .first-footer-text .contact-section form > *,
+.main .first-footer-container .first-footer-text .contact-section form input {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.main .first-footer-container .first-footer-text .contact-section input {
+  width: 300px;
+  height: 42px;
+  padding: 4px;
+  border: none;
+  color: #252b46;
+  font-weight: 800;
+  margin-top: 30px;
+}
+
+.main .first-footer-container .first-footer-text .contact-section .inputgroup {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  width: 308px;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .first-footer-container .first-footer-text .contact-section .button,
+.main .first-footer-container .first-footer-text .contact-section button.button {
+  height: 55px;
+  width: 140px;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #fff;
+  background: #fa5757;
+  border: none;
+  border-radius: 5px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 2px;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.main .first-footer-container .first-footer-text .contact-section .button:hover,
+.main .first-footer-container .first-footer-text .contact-section button.button:hover {
+  background-color: #fff;
+  color: #fa5757;
+  border: 1px solid #fa5757;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.main .first-footer-container .first-footer-text .contact-section .has-errors input {
+  outline: 2px solid #fa5757;
+}
+
+.main .first-footer-container .first-footer-text .contact-section .has-errors .messages {
+  color: #fff;
+  font-size: 13px;
+  background: #fa5757;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 310px;
+}
+
+.last-footer-container {
+  width: 100%;
+  height: 100px;
+  background: #252b46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.last-footer-container .footer-menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 100px;
+}
+
+.last-footer-container .footer-menu li a {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  margin-left: 20px;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.last-footer-container .footer-menu li a:hover {
+  color: #fa5757;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.last-footer-container .footer-socials img {
+  margin-left: -80px;
+  margin-right: 100px;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.last-footer-container .footer-socials img:hover {
+  color: #fa5757;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+@media (max-width: 656px) {
+  .main .first-footer-container {
+    height: 60vh;
+  }
+  .main .first-footer-container .first-footer-text .contact-section .inputgroup {
+    display: table;
+  }
+  .main .first-footer-container .first-footer-text .contact-section .button,
+  .main .first-footer-container .first-footer-text .contact-section button.button {
+    width: 100%;
+    margin-left: auto;
+    height: 45px;
+  }
+}
+
+@media (max-width: 589px) {
+  .main .first-footer-container .first-footer-text .contact-section .inputgroup {
+    display: table;
+  }
+  .main .first-footer-container .first-footer-text .contact-section .button,
+  .main .first-footer-container .first-footer-text .contact-section button.button {
+    width: 303px;
+  }
+  .last-footer-container {
+    height: 60vh;
+  }
+  .last-footer-container .footer-menu {
+    display: -ms-grid;
+    display: grid;
+    line-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+  }
+  .last-footer-container .footer-socials {
+    display: inline-block;
+    margin-top: 250px;
+  }
+  .last-footer-container .footer-socials img {
+    display: inline-block;
+    margin-left: -250px;
+    margin-right: auto;
+    place-items: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .main .first-footer-container {
+    height: 30rem;
+  }
+  .main .first-footer-container .first-footer-text p {
+    font-size: 19px;
+  }
+  .main .first-footer-container .first-footer-text h2 {
+    font-size: 30px;
+  }
+  .main .first-footer-container .first-footer-text .contact-section .inputgroup {
+    display: table;
+    width: 100%;
+  }
+  .main .first-footer-container .first-footer-text .inputgroup input {
+    height: 50px;
+    width: 400px;
+  }
+  .main .first-footer-container .first-footer-text .inputgroup .button,
+  .main .first-footer-container .first-footer-text .inputgroup button.button {
+    height: 60px;
+    width: 410px;
+    font-size: 22px;
+  }
+  .last-footer-container {
+    height: 60vh;
+  }
+  .last-footer-container .footer-menu {
+    display: -ms-grid;
+    display: grid;
+    line-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+  }
+  .last-footer-container .footer-menu li {
+    margin-top: 15px;
+  }
+  .last-footer-container .footer-menu li a {
+    font-size: 22px;
+  }
+  .last-footer-container .footer-socials {
+    display: inline-block;
+  }
+  .last-footer-container .footer-socials img {
+    display: inline-block;
+    margin-left: -200px;
+    margin-right: auto;
+    place-items: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main .first-footer-container {
+    height: 30rem;
+  }
+  .main .first-footer-container .first-footer-text p {
+    font-size: 19px;
+  }
+  .main .first-footer-container .first-footer-text h2 {
+    font-size: 30px;
+  }
+  .main .first-footer-container .first-footer-text .contact-section .inputgroup {
+    display: table;
+    width: 100%;
+  }
+  .main .first-footer-container .first-footer-text .inputgroup input {
+    height: 50px;
+    width: 400px;
+  }
+  .main .first-footer-container .first-footer-text .inputgroup .button,
+  .main .first-footer-container .first-footer-text .inputgroup button.button {
+    height: 60px;
+    width: 410px;
+    font-size: 22px;
+  }
+  .last-footer-container {
+    height: 60vh;
+  }
+  .last-footer-container .footer-menu {
+    display: -ms-grid;
+    display: grid;
+    line-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+  }
+  .last-footer-container .footer-menu li {
+    margin-top: 15px;
+  }
+  .last-footer-container .footer-menu li a {
+    font-size: 22px;
+  }
+  .last-footer-container .footer-socials {
+    display: inline-block;
+  }
+  .last-footer-container .footer-socials img {
+    display: inline-block;
+    margin-left: -200px;
+    margin-right: auto;
+    place-items: center;
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

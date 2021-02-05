@@ -1,0 +1,321 @@
+$font-fam-Arimo: "Arimo", sans-serif;
+$font-fam-Rubik: "Rubik", sans-serif;
+
+//color
+$unique-color: hsl(0, 94%, 66%);
+$primary-color: hsl(229, 31%, 21%);
+$secondary-color: hsl(229, 8%, 60%);
+$main-color: hsl(231, 69%, 60%);
+//transition
+
+$main-transition: all 400ms ease-in-out;
+
+.main .first-footer-container {
+  width: 100%;
+  height: 50vh;
+  background: $main-color;
+  margin-top: 100px;
+  .first-footer-text {
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    p {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 70px;
+      font-size: 14px;
+      color: #fff;
+    }
+    h2 {
+      color: #fff;
+    }
+    .contact-section {
+      form {
+        display: block;
+      }
+      form > *,
+      form input {
+        font-family: $font-fam-Rubik;
+        font-size: 14px;
+        line-height: 1;
+      }
+      input {
+        width: 300px;
+        height: 42px;
+        padding: 4px;
+        border: none;
+        color: $primary-color;
+        font-weight: 800;
+        margin-top: 30px;
+      }
+      .inputgroup {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        width: 308px;
+        place-items: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .button,
+      button.button {
+        height: 55px;
+        width: 140px;
+        text-transform: capitalize;
+        font-size: 14px;
+        color: #fff;
+        background: $unique-color;
+        border: none;
+        border-radius: 5px;
+        font-weight: 800;
+        cursor: pointer;
+        font-family: $font-fam-Rubik;
+        letter-spacing: 2px;
+        transition: $main-transition;
+        margin-left: 20px;
+        margin-top: 25px;
+        &:hover {
+          background-color: #fff;
+          color: $unique-color;
+          border: 1px solid $unique-color;
+          transition: $main-transition;
+        }
+      }
+
+      .has-errors {
+        input {
+          outline: 2px solid $unique-color;
+        }
+        .messages {
+          color: #fff;
+          font-size: 13px;
+          background: $unique-color;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          place-items: center;
+          margin-left: auto;
+          margin-right: auto;
+          width: 310px;
+        }
+      }
+    }
+  }
+}
+.last-footer-container {
+  width: 100%;
+  height: 100px;
+  background: $primary-color;
+  display: flex;
+  align-items: center;
+  .footer-menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 100px;
+    li a {
+      color: #fff;
+      font-family: $font-fam-Rubik;
+      margin-left: 20px;
+      transition: $main-transition;
+      &:hover {
+        color: $unique-color;
+        transition: $main-transition;
+      }
+    }
+  }
+  .footer-socials {
+    img {
+      margin-left: -80px;
+      margin-right: 100px;
+      transition: $main-transition;
+      &:hover {
+        color: $unique-color;
+        transition: $main-transition;
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 989px) {
+}
+@media (max-width: 656px) {
+  .main .first-footer-container {
+    height: 60vh;
+    .first-footer-text {
+      .contact-section {
+        .inputgroup {
+          display: table;
+        }
+        .button,
+        button.button {
+          width: 100%;
+          margin-left: auto;
+          height: 45px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 589px) {
+  .main .first-footer-container {
+    .first-footer-text {
+      .contact-section {
+        .inputgroup {
+          display: table;
+        }
+        .button,
+        button.button {
+          width: 303px;
+        }
+      }
+    }
+  }
+  .last-footer-container {
+    height: 60vh;
+    .footer-menu {
+      display: grid;
+      line-height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      place-items: center;
+    }
+    .footer-socials {
+      display: inline-block;
+      margin-top: 250px;
+
+      img {
+        display: inline-block;
+        margin-left: -250px;
+        margin-right: auto;
+        place-items: center;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .main .first-footer-container {
+    height: 30rem;
+    .first-footer-text {
+      p {
+        font-size: 19px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      .contact-section {
+        .inputgroup {
+          display: table;
+          width: 100%;
+        }
+      }
+
+      .inputgroup {
+        input {
+          height: 50px;
+          width: 400px;
+        }
+        .button,
+        button.button {
+          height: 60px;
+          width: 410px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .last-footer-container {
+    height: 60vh;
+    .footer-menu {
+      display: grid;
+      line-height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      place-items: center;
+      li {
+        margin-top: 15px;
+        a {
+          font-size: 22px;
+        }
+      }
+    }
+    .footer-socials {
+      display: inline-block;
+
+      img {
+        display: inline-block;
+        margin-left: -200px;
+        margin-right: auto;
+        place-items: center;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .main .first-footer-container {
+    height: 30rem;
+    .first-footer-text {
+      p {
+        font-size: 19px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      .contact-section {
+        .inputgroup {
+          display: table;
+          width: 100%;
+        }
+      }
+
+      .inputgroup {
+        input {
+          height: 50px;
+          width: 400px;
+        }
+        .button,
+        button.button {
+          height: 60px;
+          width: 410px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .last-footer-container {
+    height: 60vh;
+    .footer-menu {
+      display: grid;
+      line-height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      place-items: center;
+      li {
+        margin-top: 15px;
+        a {
+          font-size: 22px;
+        }
+      }
+    }
+    .footer-socials {
+      display: inline-block;
+
+      img {
+        display: inline-block;
+        margin-left: -200px;
+        margin-right: auto;
+        place-items: center;
+        margin-top: 30px;
+      }
+    }
+  }
+}

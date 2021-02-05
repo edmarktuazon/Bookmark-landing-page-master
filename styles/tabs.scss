@@ -1,0 +1,327 @@
+//font
+
+$font-fam-Arimo: "Arimo", sans-serif;
+$font-fam-Rubik: "Rubik", sans-serif;
+
+//color
+$unique-color: hsl(0, 94%, 66%);
+$primary-color: hsl(229, 31%, 21%);
+$secondary-color: hsl(229, 8%, 60%);
+$main-color: hsl(231, 69%, 60%);
+//transition
+
+$main-transition: all 400ms ease-in-out;
+
+.main .tabs-container {
+  height: 100vh;
+  .tabs-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .grid-tabs {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+
+    li {
+      cursor: pointer;
+      text-align: center;
+      color: $secondary-color;
+      font-family: $font-fam-Rubik;
+      text-transform: capitalize;
+      font-weight: 800;
+      border-bottom: 1px solid $secondary-color;
+      line-height: 50px;
+      display: flex;
+      flex-direction: column;
+      &::after {
+        background: $unique-color;
+        content: "";
+        height: 3px;
+        width: 100%;
+        transform: scale(0, 1);
+        transition: $main-transition;
+        transform-origin: center;
+      }
+      &:hover::after {
+        color: $primary-color;
+        transform: scale(1, 1);
+      }
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  [data-tab-content] {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+  .tab-grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 200px;
+    gap: 0;
+    .tab-text {
+      width: 400px;
+      p {
+        line-height: 25px;
+      }
+    }
+    .tab-image {
+      position: relative;
+      &::before {
+        content: "";
+        background: $main-color;
+        height: 350px;
+        width: 600px;
+        position: absolute;
+        left: -200px;
+        top: 80px;
+        z-index: -1;
+        border-bottom-right-radius: 100px;
+      }
+      .svg2-image,
+      .svg3-image {
+        margin-left: 100px;
+        height: 380px;
+      }
+    }
+    button {
+      height: 50px;
+      width: 130px;
+      text-transform: capitalize;
+      font-size: 14px;
+      color: #fff;
+      background: $main-color;
+      border: none;
+      border-radius: 5px;
+      font-weight: 800;
+      box-shadow: 1px 2px 5px #888888a4;
+      cursor: pointer;
+      font-family: $font-fam-Rubik;
+      letter-spacing: 1px;
+    }
+  }
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1315px) {
+  .main .tabs-container {
+    .tab-grid {
+      gap: 100px;
+      .tab-text {
+      }
+    }
+  }
+}
+@media (max-width: 1270px) {
+}
+@media (max-width: 1024px) {
+  .main .tabs-container {
+    .tab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 100px;
+      .tab-text {
+        width: 75%;
+        text-align: center;
+        margin-top: 50px;
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .main .tabs-container {
+    .grid-tabs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 50px;
+      width: 50%;
+    }
+    .tab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 50px;
+      .tab-text {
+        width: 75%;
+        text-align: center;
+        margin-top: 50px;
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 686px) {
+}
+@media (max-width: 656px) {
+  .main .tabs-container {
+    .tab-grid {
+      .tab-text {
+        margin-left: -100px;
+        width: 100%;
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 589px) {
+}
+@media (max-width: 425px) {
+  .main .tabs-container {
+    .tabs-text-container {
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 22px;
+      }
+    }
+    .grid-tabs {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      place-items: center;
+      display: grid;
+      li {
+        width: 80%;
+        display: grid;
+        font-size: 24px;
+      }
+    }
+    .tab-grid {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      place-items: center;
+      .tab-text {
+        text-align: center;
+        margin-top: 50px;
+        display: grid;
+        place-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 22px;
+        }
+      }
+
+      .tab-image {
+        position: relative;
+        .svg1-image {
+          width: 450px;
+          height: 300px;
+        }
+        .svg2-image {
+          height: 300px;
+          width: 350px;
+        }
+        .svg3-image {
+          height: 300px;
+          width: 350px;
+        }
+        &::before {
+          content: "";
+          background: $main-color;
+          height: 300px;
+          width: 550px;
+          position: absolute;
+          left: -150px;
+          top: 60px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .main .tabs-container {
+    .tabs-text-container {
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 19px;
+      }
+    }
+    .grid-tabs {
+      li {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        place-items: center;
+        display: grid;
+        font-size: 22px;
+      }
+    }
+    .tab-grid {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      place-items: center;
+      .tab-text {
+        text-align: center;
+        margin-top: 50px;
+        display: grid;
+        place-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 19px;
+        }
+      }
+
+      .tab-image {
+        position: relative;
+        .svg1-image {
+          width: 400px;
+        }
+        .svg2-image {
+          height: 350px;
+          width: 400px;
+        }
+        .svg3-image {
+          height: 350px;
+          width: 400px;
+        }
+        &::before {
+          content: "";
+          background: $main-color;
+          height: 320px;
+          width: 500px;
+          position: absolute;
+          left: -150px;
+          top: 50px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
